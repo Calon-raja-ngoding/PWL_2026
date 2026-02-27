@@ -3,8 +3,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 class HomeController extends Controller
 {
-    public function __invoke($name = 'nb')
+    public function __invoke()
     {
-        return view('hello', ['name'=> $name]);
+        return 'Selamat Datang';
     }
 }
